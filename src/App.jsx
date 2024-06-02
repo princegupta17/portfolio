@@ -1,7 +1,14 @@
+import { Outlet } from "react-router-dom";
+import { Contact, Navbar } from "./components";
+
 function App() {
   return (
     <>
-      <h1 className="text-3xl font-bold underline">hello world</h1>
+      <div className="bg-[#0A0A0A] text-[#FFFFFF]">
+        <Navbar />
+        <Outlet />
+        <Contact />
+      </div>
     </>
   );
 }
